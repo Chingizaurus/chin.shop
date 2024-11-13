@@ -15,18 +15,32 @@ const header = document.querySelector("header");
  */
 
 function renderItem(item, target) {
-    const el = document.createElement("div");
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+
+
     const cardContent = `
-        <div  class="card">
             <h2>${item.title}</h2>
             <h3>Категория: ${item.category}</h3>
             <h4> Цена: ${item.cost}</h4>
-            <input value="1" type="number">
-            <button data-id="${item.id}">Купить</button>
-        </div>
     `
-    el.innerHTML = cardContent;
-    target.append(el);
+    card.innerHTML = cardContent;
+
+    const input = document.createElement('input');
+    input.type = "number";
+    input.value = 1;
+
+    const button = document.createElement("button");
+    button.dataset.id = item.id;
+    button.dataset.amount = input.value;
+    button.innerText = "Купить"
+    input.onchange = () => {
+        button.dataset.amount = input.value;
+    }
+    card.append(input);
+    card.append(button)
+    target.append(card);
 }
 
 

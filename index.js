@@ -28,6 +28,7 @@ document.querySelectorAll(".card button").forEach(item=>{
 function buyItem(event) {
     //Passed ID of item
     const data = event.target.dataset.id;
+    const amount = event.target.dataset.amount;
 
     /**
      * implement logic here
