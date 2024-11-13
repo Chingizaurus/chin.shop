@@ -21,6 +21,7 @@ const categories = [
     }
 ]
 
+
 const box = [
     {
         title: "Gladius",
