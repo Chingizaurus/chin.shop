@@ -102,10 +102,13 @@ function buyItem(event) {
 
     
     box.forEach(boxItem =>{
-        if (data == boxItem.id && wallet >= boxItem.cost)
-           { wallet = wallet - boxItem.cost
-            bag.push(boxItem)}
-            if (data == boxItem.id && wallet < boxItem.cost)
+        let count = 0
+        if (data == boxItem.id && wallet >= boxItem.cost * amount)
+           { wallet = wallet - boxItem.cost * amount
+            bag.push(boxItem)
+            count++
+            }
+            if (data == boxItem.id && wallet < boxItem.cost * amount && count == 0)
             {
                 console.log("А ну, пшел нах отседова, бомжара босоногая! Нет денег, нет товаров!")
             }
