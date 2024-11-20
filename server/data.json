@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Gladius",
+    "category": 0,
+    "id": 0,
+    "cost": 500
+  },
+  {
+    "title": "Health",
+    "category": 2,
+    "id": 6,
+    "cost": 5
+  },
+  {
+    "title": "Dog",
+    "category": 3,
+    "id": 1,
+    "cost": 11
+  },
+  {
+    "title": "Mana",
+    "category": 2,
+    "id": 2,
+    "cost": 3
+  },
+  {
+    "title": "Chainmail",
+    "category": 1,
+    "id": 3,
+    "cost": 18
+  },
+  {
+    "title": "Bastard",
+    "category": 0,
+    "id": 4,
+    "cost": 24
+  },
+  {
+    "title": "Cat",
+    "category": 3,
+    "id": 5,
+    "cost": 3
+  }
+]
