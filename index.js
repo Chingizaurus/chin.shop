@@ -2,6 +2,7 @@ renderWallet(); //Wallet render function
 //You can use variable name "wallet" to decreace value if you need
 
 const main = document.querySelector('main');
+const footer = document.querySelector('footer');
 let bag =[]
 const categories = [
     {
