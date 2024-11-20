@@ -91,6 +91,20 @@ document.querySelectorAll(".card button").forEach(item=>{
     item.addEventListener("click",buyItem);
 })
 
+document.querySelectorAll(".inventory-card button").forEach(item=>{
+    item.addEventListener("click",sellItem);
+})
+
+
+function sellItem(event) {
+    const id = event.target.dataset.id;
+
+    
+
+    disposeElement(id);
+    renderWallet();
+}
+
 /**
  * 
  * 
