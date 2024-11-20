@@ -76,17 +76,18 @@ function buildShop() {
     console.log (shop)
 }
 
-function addItem(id, title) {
+function addItem(id, title, cost) {
     extraItem = {
         title: title,
         category: id,
-        id: box.length
+        id: box.length,
+        cost: cost
     }
 box.push(extraItem)
 console.log(box)
 buildShop()
 }
-addItem (2, "Poison")
+addItem (2, "Poison", 8)
 
 
 
